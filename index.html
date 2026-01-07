@@ -4,140 +4,236 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Accounts & Gift Cards</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #0f0f0f;
+      background-color: #0f0f0f;
       color: #ffffff;
     }
+
+    /* HEADER */
     header {
       background: linear-gradient(135deg, #ff9800, #ff5722);
-      padding: 20px;
+      padding: 20px 15px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 28px;
     }
+
     header p {
-      margin: 5px 0 0;
+      margin-top: 6px;
       font-size: 16px;
     }
+
+    /* BANNER */
     .banner {
       width: 100%;
-      max-height: 420px;
+      height: 400px;
       overflow: hidden;
     }
+
     .banner img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
     }
+
+    /* SECTION */
     .section {
-      padding: 30px 20px;
       max-width: 1100px;
       margin: auto;
+      padding: 40px 20px;
     }
+
     .section h2 {
       text-align: center;
       color: #ff9800;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      font-size: 26px;
     }
+
+    /* CARDS */
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
+
     .card {
-      background: #1c1c1c;
-      border-radius: 10px;
-      padding: 20px;
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 22px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
+
     .card h3 {
-      margin-top: 0;
       color: #ffcc80;
+      margin-bottom: 10px;
+      font-size: 20px;
     }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #dddddd;
+    }
+
+    /* CONTACT */
     .contact {
-      background: #151515;
+      background-color: #151515;
+      border-radius: 12px;
       padding: 25px;
-      border-radius: 10px;
       text-align: center;
+      max-width: 500px;
+      margin: auto;
     }
+
     .contact p {
-      margin: 8px 0;
       font-size: 16px;
+      margin: 10px 0;
     }
+
+    /* BUTTON */
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background-color: #ff9800;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ffc107;
+    }
+
+    /* FOOTER */
     footer {
+      background-color: #000;
       text-align: center;
       padding: 15px;
-      background: #000;
       font-size: 14px;
       color: #aaa;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 18px;
-      background: #ff9800;
-      color: #000;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .btn:hover {
-      background: #ffc107;
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+
+      header h1 {
+        font-size: 22px;
+      }
+
+      header p {
+        font-size: 14px;
+      }
+
+      .banner {
+        height: 240px;
+      }
+
+      .section {
+        padding: 30px 15px;
+      }
+
+      .section h2 {
+        font-size: 22px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+
+      .contact p {
+        font-size: 15px;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+      }
+
+      footer {
+        font-size: 12px;
+      }
     }
   </style>
 </head>
+
 <body>
- <header>
+
+  <!-- HEADER -->
+  <header>
     <h1>Free Fire • PUBG • Gift Cards</h1>
-    <p>All Game Accounts Buy & Sell | Instant Top‑Up</p>
+    <p>Buy & Sell Game Accounts | Instant Top-Up</p>
   </header>
 
-  <!-- BANNER IMAGE -->
-  <div class="ff">
-    <!-- Replace banner.jpg with your designed banner image -->
-    <img src="ff.png" alt="Gaming Banner" />
+  <!-- BANNER -->
+  <div class="free fire">
+    <!-- Replace banner.jpg with your image -->
+    <img src="ff.png" alt="Gaming Banner">
   </div>
 
+  <!-- SERVICES -->
   <section class="section">
     <h2>Our Services</h2>
+
     <div class="cards">
       <div class="card">
         <h3>Game Accounts</h3>
         <p>Free Fire & PUBG accounts available.</p>
-        <p>Buy & Sell with trusted support.</p>
+        <p>Safe buy and sell service.</p>
       </div>
+
       <div class="card">
-        <h3>Game Top‑Up</h3>
-        <p>UC, Diamonds & more.</p>
-        <p>Fast and secure delivery.</p>
+        <h3>Game Top-Up</h3>
+        <p>UC, Diamonds and more.</p>
+        <p>Fast & secure delivery.</p>
       </div>
+
       <div class="card">
         <h3>Gift Cards</h3>
-        <p>Steam, Amazon, Google Play</p>
-        <p>And many more gift cards.</p>
+        <p>Steam, Amazon, Google Play.</p>
+        <p>Many gift cards available.</p>
       </div>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="section">
     <h2>Contact Us</h2>
+
     <div class="contact">
       <p><strong>Phone:</strong> 9108141767</p>
       <p><strong>Email:</strong> kingluci3ei@gmail.com</p>
-      <a class="btn" href="tel:9108141767">Call Now</a>
+      <a href="tel:9108141767" class="btn">Call Now</a>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     © 2026 Gaming Accounts & Gift Cards | Trusted Seller
   </footer>
 
 </body>
 </html>
+
 
